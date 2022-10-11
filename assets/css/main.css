@@ -1,0 +1,94 @@
+body {
+    background-color: #FFF;
+}
+
+.vh-web {
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.vh-header {
+    position: relative;
+}
+
+.vh-home-banner {
+    background: url('../../assets/img/banner_main.png') bottom center / cover no-repeat;
+}
+
+.header-wrap {
+    display: flex;
+    height: 120px;
+    padding: 18px 0;
+}
+
+.header-logo {}
+
+.header-menu {
+    flex: 1;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 16px;
+}
+
+.menu-item-active .menu-link {
+    color: var(--primary-color);
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    font-weight: 700;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-img {
+    padding-right: 30px;
+}
+
+.search-input {
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    outline: none;
+}
+
+.home-banner {
+    position: relative;
+    height: 630px;
+}
+
+.home-banner-title {
+    position: absolute;
+    width: 493px;
+    height: 216px;
+    left: 0;
+    top: 179px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    /* or 120% */
+    color: #222;
+}
+
+.home-banner-content {}
+
+.home-banner-button {}
