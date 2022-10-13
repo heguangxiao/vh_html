@@ -16,6 +16,11 @@
     margin-right: -4px;
 }
 
+.row.mlr-16 {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
 .row.no-gutters {
     margin-left: 0;
     margin-right: 0;
@@ -24,6 +29,11 @@
 .col {
     padding-left: 4px;
     padding-right: 4px;
+}
+
+.row.mlr-16 .col {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .row.no-gutters .col {
