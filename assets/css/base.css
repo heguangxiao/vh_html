@@ -56,11 +56,71 @@ html {
     color: var(--white-color);
     font-size: 1.8rem;
     line-height: 2.2rem;
-    font-weight: 700;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.saturate {
+    filter: saturate(3);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.contrast {
+    filter: contrast(160%);
+}
+
+.brightness {
+    filter: brightness(0.25);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.huerotate {
+    filter: hue-rotate(180deg);
+}
+
+.bg-light-green {
+    background-color: #EEFAF1;
+}
+
+.bg-light-sky {
+    background-color: #E5F0F8;
+}
+
+.bg-light-sea {
+    background-color: #E3EFFF;
+}
+
+.bg-light-yellow {
+    background-color: #FFF9EB;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.p-40 {
+    padding: 40px;
 }

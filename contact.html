@@ -17,204 +17,226 @@
 </head>
 
 <body>
-    <header class="vh-header">
-        <div class="grid wide">
-            <div class="header-wrap">
-                <div class="header-logo">
-                    <img src="./assets/img/Logo Vhmedia 1.png" alt="" class="logo-img">
-                </div>
+    <div class="vh-web">
+        <header class="vh-header">
+            <div class="grid wide">
+                <div class="header-wrap">
+                    <div class="header-logo">
+                        <img src="./assets/img/Logo Vhmedia 1.png" alt="" class="logo-img">
+                    </div>
 
-                <div class="header-menu">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="./index.html" class="menu-link">Trang chủ</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Dịch vụ</a>
-                        </li>
-                        <li class="menu-item menu-item-active">
-                            <a href="./contact.html" class="menu-link">Liên hệ</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Về chúng tôi</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./news.html" class="menu-link">Tin tức</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Tuyển dụng</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="header-menu">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="./index.html" class="menu-link">Trang chủ</a>
+                            </li>
+                            <li class="menu-item menu-parent">
+                                <a href="#" class="menu-link">Dịch vụ</a>
+                                <div class="menu-child">
+                                    <ul class="menu-child-list">
+                                        <li class="menu-child-item">
+                                            <a href="./digital_marketing_service.html" class="menu-child-link">
+                                                Digital Marketing
+                                            </a>
+                                        </li>
+                                        <li class="menu-child-item">
+                                            <a href="./web_design_service.html" class="menu-child-link">
+                                                Website Design
+                                            </a>
+                                        </li>
+                                        <li class="menu-child-item">
+                                            <a href="./social_media_service.html" class="menu-child-link">
+                                                Social Media
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item menu-item-active">
+                                <a href="./contact.html" class="menu-link">Liên hệ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./about_us.html" class="menu-link">Về chúng tôi</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./news.html" class="menu-link">Tin tức</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./recruit.html" class="menu-link">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="header-search">
-                    <label for="header-search-input">
-                        <img src="./assets/img/Search.png" alt="" class="search-img">
-                    </label>
-                    <input type="text" id="header-search-input" class="search-input" placeholder="Tìm kiếm...">
+                    <div class="header-search">
+                        <label for="header-search-input">
+                            <img src="./assets/img/Search.png" alt="" class="search-img">
+                        </label>
+                        <input type="text" id="header-search-input" class="search-input" placeholder="Tìm kiếm...">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="vh-contact-content">
+            <div class="vh-contact-banner">
+                <div class="vh-contact-banner-wrap grid wide">
+                    <div class="vh-contact-banner-left">
+                        <img src="./assets/img/Group_40.png" alt="" class="vh-contact-banner-left-img">
+                    </div>
+                    <div class="vh-contact-banner-mid">
+                        <div class="vh-banner-content">
+                            Liên hệ chúng tôi
+                        </div>
+                        <div class="banner-brm">
+                            <div class="banner-brm-item">Trang chủ</div>
+                            <div class="banner-brm-item">
+                                <i class="fas fa-angle-right"></i>
+                            </div>
+                            <div class="banner-brm-item banner-brm-item-active">Liên hệ</div>
+                        </div>
+                    </div>
+                    <div class="vh-contact-banner-right">
+                        <img src="./assets/img/Group_41.png" alt="" class="vh-contact-banner-right-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="vh-contact-wrap grid wide">
+                <div class="vh-contact-left">
+                    <p class="vh-contact-left-title">Mọi thông tin chi tiết xin vui lòng liên hệ:</p>
+                    <p class="vh-contact-left-desc">Chúng tôi tin tưởng rằng với tập thể VHMEDIA đoàn kết, vững mạnh và
+                        sự
+                        ủng hộ hợp tác của Quý Công ty, VHMEDIA chắc chắn sẽ gặt hái được nhiều thành công hơn nữa trong
+                        tương lai. </p>
+                    <label for="vh-contact-left-input-name" class="vh-contact-left-label">Your name</label>
+                    <input type="text" class="vh-contact-left-input" id="vh-contact-left-input-name">
+                    <label for="vh-contact-left-input-email" class="vh-contact-left-label">Your email</label>
+                    <input type="text" class="vh-contact-left-input" id="vh-contact-left-input-email">
+                    <label for="vh-contact-left-textarea-content" class="vh-contact-left-label">Your message</label>
+                    <textarea name="vh-contact-left-textarea-content" rows="10" class="vh-contact-left-textarea"
+                        id="vh-contact-left-textarea-content" placeholder="Nhập nội dung bạn muốn..."></textarea>
+                    <button class="vh-contact-left-button btn">Gửi Thư Ngay</button>
+                </div>
+                <div class="vh-contact-right">
+                    <img src="./assets/img/contact_memphips.png" alt="" class="vh-contact-right-img">
+                    <div class="vh-contact-right-list">
+                        <div class="vh-contact-right-item">
+                            <div class="vh-contact-right-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="vh-contact-right-content">
+                                Số 134 Khuất Duy Tiến, Phường Nhân Chính, Quận Thanh Xuân, Thành Phố Hà Nội
+                            </div>
+                        </div>
+                        <div class="vh-contact-right-item">
+                            <div class="vh-contact-right-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="vh-contact-right-content">
+                                info@viethungmedia@gmail.vn
+                            </div>
+                        </div>
+                        <div class="vh-contact-right-item">
+                            <div class="vh-contact-right-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="vh-contact-right-content">
+                                028-9999-9097
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vh-contact-right-ext">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
 
-    <div class="vh-contact-content">
-        <div class="vh-contact-banner">
-            <div class="vh-contact-banner-wrap grid wide">
-                <div class="vh-contact-banner-left">
-                    <img src="./assets/img/Group_40.png" alt="" class="vh-contact-banner-left-img">
-                </div>
-                <div class="vh-contact-banner-mid">
-                    <div class="vh-banner-content">
-                        Liên hệ chúng tôi
-                    </div>
-                    <div class="banner-brm">
-                        <div class="banner-brm-item">Trang chủ</div>
-                        <div class="banner-brm-item">
-                            <i class="fas fa-angle-right"></i>
-                        </div>
-                        <div class="banner-brm-item banner-brm-item-active">Liên hệ</div>
-                    </div>
-                </div>
-                <div class="vh-contact-banner-right">
-                    <img src="./assets/img/Group_41.png" alt="" class="vh-contact-banner-right-img">
-                </div>
+        <footer class="vh-footer">
+            <div class="vh-footer-top">
+                <p class="footer-top-title">Chúng tôi chuyên nghiệp nhất</p>
+                <p class="footer-top-desc">Hợp Tác Với Chúng Tôi Trong Các Dự Án Của Bạn</p>
+                <button class="btn footer-top-button">
+                    Liên hệ ngay
+                </button>
             </div>
-        </div>
 
-        <div class="vh-contact-wrap grid wide">
-            <div class="vh-contact-left">
-                <p class="vh-contact-left-title">Mọi thông tin chi tiết xin vui lòng liên hệ:</p>
-                <p class="vh-contact-left-desc">Chúng tôi tin tưởng rằng với tập thể VHMEDIA đoàn kết, vững mạnh và sự
-                    ủng hộ hợp tác của Quý Công ty, VHMEDIA chắc chắn sẽ gặt hái được nhiều thành công hơn nữa trong
-                    tương lai. </p>
-                <label for="vh-contact-left-input-name" class="vh-contact-left-label">Your name</label>
-                <input type="text" class="vh-contact-left-input" id="vh-contact-left-input-name">
-                <label for="vh-contact-left-input-email" class="vh-contact-left-label">Your email</label>
-                <input type="text" class="vh-contact-left-input" id="vh-contact-left-input-email">
-                <label for="vh-contact-left-textarea-content" class="vh-contact-left-label">Your message</label>
-                <textarea name="vh-contact-left-textarea-content" rows="10" class="vh-contact-left-textarea" id="vh-contact-left-textarea-content"
-                    placeholder="Nhập nội dung bạn muốn..."></textarea>
-                <button class="vh-contact-left-button btn">Gửi Thư Ngay</button>
-            </div>
-            <div class="vh-contact-right">
-                <img src="./assets/img/contact_memphips.png" alt="" class="vh-contact-right-img">
-                <div class="vh-contact-right-list">
-                    <div class="vh-contact-right-item">
-                        <div class="vh-contact-right-icon">
-                            <i class="fas fa-location-dot"></i>
+            <div class="vh-footer-mid">
+                <div class="vh-footer-mid-item vh-footer-mid-item-left">
+                    <div class="vh-footer-mid-item-left-logo">
+                        <img src="./assets/img/Logo Vhmedia 1.png" alt="" class="vh-footer-mid-item-left-img">
+                    </div>
+                    <div class="vh-footer-mid-item-left-content">
+                        Vhmedia cũng sẽ không ngừng học hỏi để nâng cao chất lượng phục vụ, nâng cao năng lực cạnh
+                        tranh. Chúng tôi tin tưởng rằng với tập thể VHMEDIA đoàn kết, vững mạnh và sự ủng hộ hợp tác của
+                        Quý Công ty, VHMEDIA chắc chắn sẽ gặt hái được nhiều thành công hơn nữa trong tương lai.
+                    </div>
+                    <div class="vh-footer-mid-item-left-ext">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="vh-footer-mid-item vh-footer-mid-item-right">
+                    <p class="vh-footer-mid-item-right-top">
+                        Thông tin liên lạc
+                    </p>
+
+                    <div class="vh-footer-mid-item-right-mid">
+                        <div class="vh-footer-mid-item-right-mid-address">
+                            <div class="vh-footer-mid-item-right-mid-img">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="vh-footer-mid-item-right-mid-address-content">
+                                Số 134 Khuất Duy Tiến, Phường Nhân Chính,
+                                Quận Thanh Xuân, Thành Phố Hà Nội
+                            </div>
                         </div>
-                        <div class="vh-contact-right-content">
-                            Số 134 Khuất Duy Tiến, Phường Nhân Chính, Quận Thanh Xuân, Thành Phố Hà Nội
+
+                        <div class="vh-footer-mid-item-right-mid-email">
+                            <div class="vh-footer-mid-item-right-mid-img">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="vh-footer-mid-item-right-mid-email-content">
+                                info@viethungmedia@gmail.vn
+                            </div>
+                        </div>
+
+                        <div class="vh-footer-mid-item-right-mid-phone">
+                            <div class="vh-footer-mid-item-right-mid-img">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="vh-footer-mid-item-right-mid-phone-content">
+                                028-9999-9097
+                            </div>
                         </div>
                     </div>
-                    <div class="vh-contact-right-item">
-                        <div class="vh-contact-right-icon">
-                            <i class="far fa-envelope"></i>
+
+                    <div class="vh-footer-mid-item-right-bot">
+                        <div class="vh-footer-mid-item-right-bot-img">
+                            <i class="far fa-calendar"></i>
                         </div>
-                        <div class="vh-contact-right-content">
-                            info@viethungmedia@gmail.vn
-                        </div>
-                    </div>
-                    <div class="vh-contact-right-item">
-                        <div class="vh-contact-right-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="vh-contact-right-content">
-                            028-9999-9097
+                        <div class="vh-footer-mid-item-right-bot-time">
+                            <div class="vh-footer-mid-item-right-bot-time-title">
+                                Thời gian làm việc
+                            </div>
+                            <div class="vh-footer-mid-item-right-bot-time-content">
+                                <b>Thứ Hai - Thứ Bảy : </b>08h30AM - 17h30PM
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="vh-contact-right-ext">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
             </div>
-        </div>
+
+            <div class="vh-footer-bottom">
+                © 2022 vhmedia. All rights reserved.
+            </div>
+        </footer>
     </div>
-
-    <footer class="vh-footer">
-        <div class="vh-footer-top">
-            <p class="footer-top-title">Chúng tôi chuyên nghiệp nhất</p>
-            <p class="footer-top-desc">Hợp Tác Với Chúng Tôi Trong Các Dự Án Của Bạn</p>
-            <button class="btn footer-top-button">
-                Liên hệ ngay
-            </button>
-        </div>
-
-        <div class="vh-footer-mid">
-            <div class="vh-footer-mid-item vh-footer-mid-item-left">
-                <div class="vh-footer-mid-item-left-logo">
-                    <img src="./assets/img/Logo Vhmedia 1.png" alt="" class="vh-footer-mid-item-left-img">
-                </div>
-                <div class="vh-footer-mid-item-left-content">
-                    Vhmedia cũng sẽ không ngừng học hỏi để nâng cao chất lượng phục vụ, nâng cao năng lực cạnh
-                    tranh. Chúng tôi tin tưởng rằng với tập thể VHMEDIA đoàn kết, vững mạnh và sự ủng hộ hợp tác của
-                    Quý Công ty, VHMEDIA chắc chắn sẽ gặt hái được nhiều thành công hơn nữa trong tương lai.
-                </div>
-                <div class="vh-footer-mid-item-left-ext">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-            <div class="vh-footer-mid-item vh-footer-mid-item-right">
-                <p class="vh-footer-mid-item-right-top">
-                    Thông tin liên lạc
-                </p>
-
-                <div class="vh-footer-mid-item-right-mid">
-                    <div class="vh-footer-mid-item-right-mid-address">
-                        <div class="vh-footer-mid-item-right-mid-img">
-                            <i class="fas fa-location-dot"></i>
-                        </div>
-                        <div class="vh-footer-mid-item-right-mid-address-content">
-                            Số 134 Khuất Duy Tiến, Phường Nhân Chính,
-                            Quận Thanh Xuân, Thành Phố Hà Nội
-                        </div>
-                    </div>
-
-                    <div class="vh-footer-mid-item-right-mid-email">
-                        <div class="vh-footer-mid-item-right-mid-img">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <div class="vh-footer-mid-item-right-mid-email-content">
-                            info@viethungmedia@gmail.vn
-                        </div>
-                    </div>
-
-                    <div class="vh-footer-mid-item-right-mid-phone">
-                        <div class="vh-footer-mid-item-right-mid-img">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="vh-footer-mid-item-right-mid-phone-content">
-                            028-9999-9097
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vh-footer-mid-item-right-bot">
-                    <div class="vh-footer-mid-item-right-bot-img">
-                        <i class="far fa-calendar"></i>
-                    </div>
-                    <div class="vh-footer-mid-item-right-bot-time">
-                        <div class="vh-footer-mid-item-right-bot-time-title">
-                            Thời gian làm việc
-                        </div>
-                        <div class="vh-footer-mid-item-right-bot-time-content">
-                            <b>Thứ Hai - Thứ Bảy : </b>08h30AM - 17h30PM
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="vh-footer-bottom">
-            © 2022 vhmedia. All rights reserved.
-        </div>
-    </footer>
 </body>
 
 </html>
