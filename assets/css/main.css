@@ -9,6 +9,7 @@ body {
 }
 
 .vh-web {
+    background-color: var(--white-color);
     overflow: hidden;
     max-width: 1440px;
     margin: 0 auto;
@@ -1799,4 +1800,145 @@ body {
 
 .vh-pagi-pagi-item.vh-pagi-pagi-item-active {
     color: var(--primary-color);
+}
+
+.vh-digital-marketing-content {
+    position: relative;
+}
+
+.vh-digital-marketing-banner {
+    background: url('../../assets/img/banner_digital_marketing_top.png') top right / cover no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vh-digital-marketing-left-img {
+    position: absolute;
+    top: 54px;
+    left: 65px;
+}
+
+.vh-digital-marketing-right-img {
+    position: absolute;
+    top: 40px;
+    right: 132px;
+}
+
+.vh-digital-marketing-introduce {
+    background: url('../../assets/img/digital_marketing_introduce.png') top right / cover no-repeat;
+    margin: 50px 75px 120px;
+    min-height: 500px;
+}
+
+.vh-digital-marketing-item {
+    padding: 20px 0 70px;
+}
+
+.vh-digital-marketing-title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    color: #222;
+}
+
+.vh-digital-marketing-desc {
+    padding: 24px 0 32px;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #333;
+}
+
+.vh-digital-marketing-content {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #444;
+}
+
+.vh-digital-marketing-info {
+    padding: 16px 0 32px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #444;
+}
+
+.vh-digital-marketing-more {}
+
+.vh-digital-marketing-btn {}
+
+.vh-digital-marketing-ext {
+    display: flex;
+}
+
+.vh-digital-marketing-solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.vh-solution-title {
+    width: 500px;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 5rem;
+    color: #222;
+    padding-bottom: 50px;
+}
+
+.vh-solution-list {}
+
+.vh-solution-item {
+    background: var(--white-color);
+    border: 1px solid #D9D9D9;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.vh-solution-image {
+    height: 220px;
+    padding: 20px 20px 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.vh-solution-img {
+    width: 100%;
+}
+
+.vh-solution-item-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #222;
+}
+
+.vh-solution-item-sub {
+    height: 32px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #444;
+}
+
+.vh-solution-item-content {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #444;
+    padding: 6px 50px 16px;
+}
+
+.vh-solution-item-btn {
+    position: relative;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 1.6rem;
 }
