@@ -124,3 +124,39 @@ html {
 .p-40 {
     padding: 40px;
 }
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+
+.border-top {
+    border-top: 1px solid;
+}
+
+.border-left {
+    border-left: 1px solid;
+}
+
+.border-right {
+    border-right: 1px solid;
+}
+
+.border-bottom-left-radius-10 {
+    border-bottom-left-radius: 10px;
+}
+
+.border-bottom-right-radius-10 {
+    border-bottom-right-radius: 10px;
+}
+
+.border-top-left-radius-10 {
+    border-top-left-radius: 10px;
+}
+
+.border-top-right-radius-10 {
+    border-top-right-radius: 10px;
+}
+
+.text-dark {
+    color: var(--black-color);
+}
