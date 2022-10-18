@@ -22,7 +22,7 @@
             <div class="grid wide">
                 <div class="header-wrap">
                     <div class="header-logo">
-                        <img src="./assets/img/Logo Vhmedia 1.png" alt="" class="logo-img">
+                        <a href="./index.html"><img src="./assets/img/Logo Vhmedia 1.png" alt="" class="logo-img"></a>
                     </div>
 
                     <div class="header-menu">
@@ -91,9 +91,9 @@
                         Vhmedia sẽ không ngừng học hỏi để nâng cao
                         chất lượng phục vụ và nâng cao năng lực cạnh tranh.
                     </p>
-                    <button class="btn home-banner-button">
+                    <a href="./contact.html" class="btn home-banner-button">
                         Liên hệ ngay
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -144,9 +144,9 @@
                             Vhmedia ra đời với sứ mệnh phục vụ và cung cấp những dịch vụ tốt nhất, đưa ra
                             những giải pháp hữu ích tới khách hàng.
                         </p>
-                        <button class="btn who-are-we-button">
+                        <a href="./contact.html" class="btn who-are-we-button">
                             Liên hệ ngay
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -155,57 +155,65 @@
                 <p class="our-service-title">Dịch vụ của chúng tôi</p>
                 <p class="our-service-desc">Hệ thống sản phẩm dịch vụ.</p>
                 <div class="our-service-slider">
-                    <div class="our-service-button our-service-button-pre">
+                    <div class="our-service-button our-service-button-pre" onclick="preOurService()">
                         <i class="fas fa-arrow-left"></i>
                     </div>
                     <div class="our-service-list">
                         <div class="our-service-item">
-                            <div class="our-service-card">
-                                <img src="./assets/img/our_service_1.png" alt="" class="our-service-img">
-                                <div class="our-service-eye">
-                                    <i class="fa-regular fa-eye"></i>
+                            <a href="./digital_marketing_service.html">
+                                <div class="our-service-card">
+                                    <img src="./assets/img/our_service_1.png" alt="" class="our-service-img">
+                                    <div class="our-service-eye">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="our-service-name">
-                                Digital Marketing
-                            </div>
+                                <div class="our-service-name">
+                                    Digital Marketing
+                                </div>
+                            </a>
                         </div>
                         <div class="our-service-item our-service-item-active">
-                            <div class="our-service-card">
-                                <img src="./assets/img/our_service_2.png" alt="" class="our-service-img">
-                                <div class="our-service-eye">
-                                    <i class="fa-regular fa-eye"></i>
+                            <a href="./web_design_service.html">
+                                <div class="our-service-card">
+                                    <img src="./assets/img/our_service_2.png" alt="" class="our-service-img">
+                                    <div class="our-service-eye">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="our-service-name">
-                                Thiết kế website
-                            </div>
+                                <div class="our-service-name">
+                                    Thiết kế website
+                                </div>
+                            </a>
                         </div>
                         <div class="our-service-item">
-                            <div class="our-service-card">
-                                <img src="./assets/img/our_service_3.png" alt="" class="our-service-img">
-                                <div class="our-service-eye">
-                                    <i class="fa-regular fa-eye"></i>
+                            <a href="./social_media_service.html">
+                                <div class="our-service-card">
+                                    <img src="./assets/img/our_service_3.png" alt="" class="our-service-img">
+                                    <div class="our-service-eye">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="our-service-name">
-                                Social Media
-                                Marketing
-                            </div>
+                                <div class="our-service-name">
+                                    Social Media
+                                    Marketing
+                                </div>
+                            </a>
                         </div>
                         <div class="our-service-item">
-                            <div class="our-service-card">
-                                <img src="./assets/img/our_service_4.png" alt="" class="our-service-img">
-                                <div class="our-service-eye">
-                                    <i class="fa-regular fa-eye"></i>
+                            <a href="##">
+                                <div class="our-service-card">
+                                    <img src="./assets/img/our_service_4.png" alt="" class="our-service-img">
+                                    <div class="our-service-eye">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="our-service-name">
-                                Photography
-                            </div>
+                                <div class="our-service-name">
+                                    Photography
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="our-service-button our-service-button-next">
+                    <div class="our-service-button our-service-button-next" onclick="nextOurService()">
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
@@ -312,13 +320,17 @@
                     </div>
 
                     <div class="vh-pagi-pagi">
-                        <div class="vh-pagi-pagi-item vh-pagi-pagi-item-active">
+                        <div class="vh-pagi-pagi-item vh-pagi-pagi-item-active"
+                            onclick="companyMembersListChangeOnclick(this)">
                             <i class="fas fa-circle"></i>
                         </div>
-                        <div class="vh-pagi-pagi-item">
+                        <div class="vh-pagi-pagi-item" onclick="companyMembersListChangeOnclick(this)">
                             <i class="fas fa-circle"></i>
                         </div>
-                        <div class="vh-pagi-pagi-item">
+                        <div class="vh-pagi-pagi-item" onclick="companyMembersListChangeOnclick(this)">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="vh-pagi-pagi-item" onclick="companyMembersListChangeOnclick(this)">
                             <i class="fas fa-circle"></i>
                         </div>
                     </div>
@@ -326,7 +338,7 @@
             </div>
 
             <div class="partner-logos">
-                <div class="partner-logo-button partner-logo-pre">
+                <div class="partner-logo-button partner-logo-pre" onclick="prePartnerLogo()">
                     <i class="fas fa-arrow-left"></i>
                 </div>
                 <div class="partner-logo-list">
@@ -346,7 +358,7 @@
                         <img src="./assets/img/logo_5.png" alt="" class="partner-logo-img">
                     </div>
                 </div>
-                <div class="partner-logo-button partner-logo-next">
+                <div class="partner-logo-button partner-logo-next" onclick="nextPartnerLogo()">
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </div>
@@ -434,6 +446,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

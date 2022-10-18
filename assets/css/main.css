@@ -351,6 +351,12 @@ body {
     width: 280px;
     height: 320px;
     background-color: var(--white-color);
+    transition: height .2s;
+}
+
+.our-service-item a {
+    text-decoration: none;
+    color: var(--black-color);
 }
 
 .our-service-item-active {
@@ -598,6 +604,7 @@ body {
     flex: 1;
     padding-left: 16px;
     padding-right: 16px;
+    animation: fadeIn ease-in .3s;
 }
 
 .company-members-img {
@@ -1629,15 +1636,16 @@ body {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .partner-logo-item {
     background-color: var(--white-color);
     margin: 0 10px;
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 225px;
 }
 
 .partner-logo-img {}
@@ -1795,11 +1803,13 @@ body {
     color: #444;
 }
 
+.vh-pagi-reviews,
 .vh-pagi-pagi {
     display: flex;
     justify-content: center;
 }
 
+.vh-pagi-reviews-item,
 .vh-pagi-pagi-item {
     width: 10px;
     height: 10px;
@@ -1807,6 +1817,7 @@ body {
     color: #d9d9d9;
 }
 
+.vh-pagi-reviews-item.vh-pagi-reviews-item-active,
 .vh-pagi-pagi-item.vh-pagi-pagi-item-active {
     color: var(--primary-color);
 }
