@@ -11,7 +11,6 @@ body {
 .vh-web {
     background-color: var(--white-color);
     overflow: hidden;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -24,6 +23,8 @@ body {
     background-repeat: no-repeat;
     background-position: 80% 80%;
     animation: fadeIn ease-in .3s;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header-wrap {
@@ -219,6 +220,8 @@ body {
     background: url('../../assets/img/who_are_we.png') bottom center / cover no-repeat;
     height: 650px;
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .who-are-we-wrap {}
@@ -272,10 +275,16 @@ body {
 }
 
 .our-service {
+    background: #F7F7F9;
+}
+
+.our-service-wrap {
     background: url('../../assets/img/our_service.png') top center / cover no-repeat;
     height: 680px;
     text-align: center;
     padding-top: 108px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .our-service-title {
@@ -406,11 +415,15 @@ body {
     margin-right: 40px;
 }
 
-.home-customers {
+.home-customers {}
+
+.home-customers-wrap {
     background: url('../../assets/img/home_customers.png') top center / cover no-repeat;
     height: 910px;
     padding: 40px 0;
     position: relative;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .home-customers-title {
@@ -517,9 +530,15 @@ body {
 }
 
 .home-commit {
+    background: #F9F9F9;
+}
+
+.home-commit-wrap {
     background: url('../../assets/img/home_commit.png') top center / cover no-repeat;
     height: 624px;
     position: relative;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .home-commit-content {
@@ -573,9 +592,14 @@ body {
 }
 
 .company-members {
+    margin-bottom: 24px;
+}
+
+.company-members-wrap {
     background: url('../../assets/img/company_member.png') bottom center / cover no-repeat;
     height: 642px;
-    margin-bottom: 24px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .company-members-title {
@@ -634,10 +658,17 @@ body {
 .vh-footer {}
 
 .vh-footer-top {
+    background: #E7F8FF;
+}
+
+.vh-footer-top-wrap {
     background: url('../../assets/img/banner_bot.png') bottom center / cover no-repeat;
     height: 320px;
     text-align: center;
     position: relative;
+    max-width: 1440px;
+    margin: auto;
+    animation: fadeIn ease-in .3s;
 }
 
 .footer-top-title {
@@ -666,6 +697,8 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 80px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .vh-footer-mid-item {
@@ -864,8 +897,12 @@ body {
     right: 116px;
 }
 
-.vh-contact-content {
+.vh-contact-content {}
+
+.vh-contact-content-wrap {
     background: url('../../assets/img/contact_bg.png') top center / cover no-repeat;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .vh-contact-wrap {
@@ -1220,6 +1257,10 @@ body {
 }
 
 .vh-web-design-banner {
+    background: #e9f8ff;
+}
+
+.vh-web-design-banner-wrap {
     background: url('../../assets/img/banner_web_design_top.png') top center / cover no-repeat;
     height: 350px;
     display: flex;
@@ -1227,6 +1268,9 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn ease-in .3s;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
 }
 
 .vh-web-design-wrap {
@@ -1316,6 +1360,10 @@ body {
 }
 
 .vh-about-us-banner {
+    background: #e7f8ff;
+}
+
+.vh-about-us-banner-wrap {
     background: url('../../assets/img/banner_about_us_top.png') top center / cover no-repeat;
     height: 350px;
     display: flex;
@@ -1323,15 +1371,20 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn ease-in .3s;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .vh-history {
-    background: url('../../assets/img/history_bg.png') top center / cover no-repeat;
     min-height: 700px;
+    background: #f7f7f9;
 }
 
 .vh-history-wrap {
+    background: url('../../assets/img/history_bg.png') top center / cover no-repeat;
     padding-top: 50px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .vh-history-item {}
@@ -1570,9 +1623,14 @@ body {
 }
 
 .vh-partner-customer {
-    background-color: #f9f9f9;
+    background: #f9f9f9;
+}
+
+.vh-partner-customer-wrap {
     padding-top: 74px;
     position: relative;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .vh-partner-wrap {
@@ -1606,6 +1664,11 @@ body {
 
 .partner-logos {
     background-color: #f9f9f9;
+}
+
+.partner-logos-wrap {
+    max-width: 1440px;
+    margin: auto;
     height: 268px;
     display: flex;
     justify-content: space-between;
@@ -1821,8 +1884,17 @@ body {
     height: 10px;
     padding: 0 10px;
     color: #d9d9d9;
+    cursor: pointer;
+    transition: color 0.6s ease;
 }
 
+.vh-pagi-reviews-item:hover,
+.vh-pagi-pagi-item:hover {
+    opacity: 0.5s;
+}
+
+.vh-pagi-reviews-item:hover,
+.vh-pagi-pagi-item:hover,
 .vh-pagi-reviews-item.vh-pagi-reviews-item-active,
 .vh-pagi-pagi-item.vh-pagi-pagi-item-active {
     color: var(--primary-color);
@@ -1833,6 +1905,10 @@ body {
 }
 
 .vh-digital-marketing-banner {
+    background: #e9f8ff;
+}
+
+.vh-digital-marketing-banner-wrap {
     background: url('../../assets/img/banner_digital_marketing_top.png') top right / cover no-repeat;
     height: 350px;
     display: flex;
@@ -1840,6 +1916,9 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn ease-in .3s;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
 }
 
 .vh-digital-marketing-left-img {
@@ -1858,6 +1937,8 @@ body {
     background: url('../../assets/img/digital_marketing_introduce.png') top right / cover no-repeat;
     margin: 50px 75px 120px;
     min-height: 500px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .vh-digital-marketing-item {
@@ -2078,6 +2159,10 @@ body {
 }
 
 .vh-social-media-banner {
+    background: #e7fff9;
+}
+
+.vh-social-media-banner-wrap {
     background: url('../../assets/img/banner_social_media_top.png') top left / cover no-repeat;
     height: 350px;
     display: flex;
@@ -2085,6 +2170,9 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn ease-in .3s;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
 }
 
 .vh-social-media-right-img {
@@ -2094,9 +2182,14 @@ body {
 }
 
 .vh-social-media-introduce {
+    margin: 56px 0;
+}
+
+.vh-social-media-introduce-wrap {
     background: url('../../assets/img/social_media_introduce.png') top center / cover no-repeat;
     padding: 50px 0 143px;
-    margin-bottom: 57px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .vh-social-media-item {

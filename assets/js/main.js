@@ -61,7 +61,7 @@ function companyMembersListChangeIndex() {
     });
 }
 
-var companyMembersListInterval = setInterval(companyMembersListChangeIndex, 3000);
+var companyMembersListInterval = setInterval(companyMembersListChangeIndex, 5000);
 
 function stopCompanyMembersListInterval() {
     clearInterval(companyMembersListInterval);
@@ -92,7 +92,7 @@ function companyMembersListChangeOnclick(e) {
             pagis[index].classList.add("vh-pagi-pagi-item-active");
         }
     });
-    companyMembersListInterval = setInterval(companyMembersListChangeIndex, 3000);
+    companyMembersListInterval = setInterval(companyMembersListChangeIndex, 5000);
 }
 
 var partnerLogoList = $$(".partner-logo-item");
@@ -148,7 +148,7 @@ function vhReviewListChangeIndex() {
     });
 }
 
-var vhReviewListInterval = setInterval(vhReviewListChangeIndex, 3000);
+var vhReviewListInterval = setInterval(vhReviewListChangeIndex, 5000);
 
 function stopVhReviewListInterval() {
     clearInterval(vhReviewListInterval);
@@ -179,5 +179,5 @@ function vhReviewListOnclick(e) {
             reviewPagis[index].classList.add("vh-pagi-reviews-item-active");
         }
     });
-    vhReviewListInterval = setInterval(vhReviewListChangeIndex, 3000);
+    vhReviewListInterval = setInterval(vhReviewListChangeIndex, 5000);
 }
