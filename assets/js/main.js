@@ -63,13 +63,12 @@ function companyMembersListChangeIndex() {
 
 var companyMembersListInterval = setInterval(companyMembersListChangeIndex, 3000);
 
-function stopClock() {
+function stopCompanyMembersListInterval() {
     clearInterval(companyMembersListInterval);
 }
 
 function companyMembersListChangeOnclick(e) {
-    stopClock();
-    const index = parseInt(e.getAttribute("index"));
+    stopCompanyMembersListInterval();
     $(".vh-pagi-pagi-item.vh-pagi-pagi-item-active").classList.remove("vh-pagi-pagi-item-active");
     pagis.forEach((pagi, index) => {
         if (pagi == e) {
@@ -104,7 +103,7 @@ partnerLogoList.forEach((partnerLogoItem, index) => {
     }
 });
 
-function prePartnerLogo() {
+function nextPartnerLogo() {
     partnerLogoList.forEach((partnerLogoItem, index) => {
         var order = parseInt(partnerLogoItem.style.order) - 1;
         if (order == 0) {
@@ -113,7 +112,8 @@ function prePartnerLogo() {
         partnerLogoItem.style.order = order;
     });
 }
-function nextPartnerLogo() {
+
+function prePartnerLogo() {
     partnerLogoList.forEach((partnerLogoItem, index) => {
         var order = parseInt(partnerLogoItem.style.order) + 1;
         if (order > partnerLogoList.length) {
@@ -121,4 +121,63 @@ function nextPartnerLogo() {
         }
         partnerLogoItem.style.order = order;
     });
+}
+
+var vhReviewList = $$(".vh-reviews-col");
+var reviewPagis = $$(".vh-pagi-reviews-item");
+
+function vhReviewListChangeIndex() {
+    var i = 1;
+    vhReviewList.forEach((vhReviewItem, index) => {
+        const pagi = reviewPagis[index];
+
+        if (vhReviewItem.style.order == '') {
+            vhReviewItem.style.order = i++;
+        } else {
+            i = parseInt(vhReviewItem.style.order) - 1;
+            if (i < 1) {
+                i = vhReviewList.length;
+            }
+            vhReviewItem.style.order = i;
+        }
+
+        if (i == 1) {
+            $(".vh-pagi-reviews-item.vh-pagi-reviews-item-active").classList.remove("vh-pagi-reviews-item-active");
+            pagi.classList.add("vh-pagi-reviews-item-active");
+        }
+    });
+}
+
+var vhReviewListInterval = setInterval(vhReviewListChangeIndex, 3000);
+
+function stopVhReviewListInterval() {
+    clearInterval(vhReviewListInterval);
+}
+
+function vhReviewListOnclick(e) {
+    stopVhReviewListInterval();
+    $(".vh-pagi-reviews-item.vh-pagi-reviews-item-active").classList.remove("vh-pagi-reviews-item-active");
+    reviewPagis.forEach((pagi, index) => {
+        if (pagi == e) {
+            var n = 1;
+            for (var i = 1; i <= vhReviewList.length; i++) {
+                if (vhReviewList[i - 1].style.order == '') {
+                    vhReviewList[i - 1].style.order = n++;
+                }
+            }
+
+            for (var i = 1; i <= vhReviewList.length; i++) {
+                if (i - 1 < parseInt(index)) {
+                    vhReviewList[i - 1].style.order = vhReviewList.length - parseInt(index) + i;
+                } else if (i - 1 == parseInt(index)) {
+                    vhReviewList[i - 1].style.order = 1;
+                } else {
+                    vhReviewList[i - 1].style.order = i - parseInt(index);
+                }
+            }
+
+            reviewPagis[index].classList.add("vh-pagi-reviews-item-active");
+        }
+    });
+    vhReviewListInterval = setInterval(vhReviewListChangeIndex, 3000);
 }

@@ -115,7 +115,7 @@
                                 trong tương lai.
                             </div>
                             <div class="vh-history-bot">
-                                <div class="btn vh-history-btn">Liên Hệ Chúng Tôi</div>
+                                <a href="./contact.html" class="btn vh-history-btn">Liên Hệ Chúng Tôi</a>
                                 <div class="vh-history-img">
                                     <img src="./assets/img/customer_service_1.png" alt="" class="vh-history-icon">
                                 </div>
@@ -251,7 +251,7 @@
                             Chúng Tôi Có Hơn 1000+ Đối Tác & Khách Hàng Đáng Tin Cậy
                         </p>
                         <div class="vh-partner-slider">
-                            <div class="partner-logo-button partner-logo-pre">
+                            <div class="partner-logo-button partner-logo-pre" onclick="prePartnerLogo()">
                                 <i class="fas fa-arrow-left"></i>
                             </div>
                             <div class="partner-logo-list vh-partner-slider-list">
@@ -271,7 +271,7 @@
                                     <img src="./assets/img/viettel.png" alt="" class="partner-logo-img">
                                 </div>
                             </div>
-                            <div class="partner-logo-button partner-logo-next">
+                            <div class="partner-logo-button partner-logo-next" onclick="nextPartnerLogo()">
                                 <i class="fas fa-arrow-right"></i>
                             </div>
 
@@ -339,7 +339,7 @@
                         <p class="vh-reviews-desc">Khách Hàng Nói Về Chúng Tôi</p>
                         <div class="vh-reviews-list">
                             <div class="row mlr-16">
-                                <div class="col l-4 m-6 c-12">
+                                <div class="col l-4 m-6 c-12 vh-reviews-col">
                                     <div class="vh-reviews-item">
                                         <img src="./assets/img/customer_1.png" alt="" class="vh-reviews-item-img">
                                         <p class="vh-reviews-item-title">
@@ -362,7 +362,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-4 m-6 c-12">
+                                <div class="col l-4 m-6 c-12 vh-reviews-col">
                                     <div class="vh-reviews-item">
                                         <img src="./assets/img/customer_2.png" alt="" class="vh-reviews-item-img">
                                         <p class="vh-reviews-item-title">
@@ -385,7 +385,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-4 m-6 c-12">
+                                <div class="col l-4 m-6 c-12 vh-reviews-col">
                                     <div class="vh-reviews-item">
                                         <img src="./assets/img/customer_3.png" alt="" class="vh-reviews-item-img">
                                         <p class="vh-reviews-item-title">
@@ -413,13 +413,14 @@
                     </div>
 
                     <div class="vh-pagi-reviews">
-                        <div class="vh-pagi-reviews-item vh-pagi-reviews-item-active">
+                        <div class="vh-pagi-reviews-item vh-pagi-reviews-item-active"
+                            onclick="vhReviewListOnclick(this)">
                             <i class="fas fa-circle"></i>
                         </div>
-                        <div class="vh-pagi-reviews-item">
+                        <div class="vh-pagi-reviews-item" onclick="vhReviewListOnclick(this)">
                             <i class="fas fa-circle"></i>
                         </div>
-                        <div class="vh-pagi-reviews-item">
+                        <div class="vh-pagi-reviews-item" onclick="vhReviewListOnclick(this)">
                             <i class="fas fa-circle"></i>
                         </div>
                     </div>
@@ -482,9 +483,9 @@
             <div class="vh-footer-top">
                 <p class="footer-top-title">Chúng tôi chuyên nghiệp nhất</p>
                 <p class="footer-top-desc">Hợp Tác Với Chúng Tôi Trong Các Dự Án Của Bạn</p>
-                <button class="btn footer-top-button">
+                <a href="./contact.html" class="btn footer-top-button">
                     Liên hệ ngay
-                </button>
+                </a>
             </div>
 
             <div class="vh-footer-mid">

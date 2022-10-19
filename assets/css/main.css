@@ -23,6 +23,7 @@ body {
     background: url('../../assets/img/banner_main.png');
     background-repeat: no-repeat;
     background-position: 80% 80%;
+    animation: fadeIn ease-in .3s;
 }
 
 .header-wrap {
@@ -119,6 +120,7 @@ body {
 
 .search-img {
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .search-input {
@@ -804,6 +806,7 @@ body {
 .vh-contact-banner {
     background: url('../../assets/img/banner_contact_top.png') bottom center / cover no-repeat;
     height: 350px;
+    animation: fadeIn ease-in .3s;
 }
 
 .vh-contact-banner-wrap {
@@ -996,6 +999,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn ease-in .3s;
 }
 
 .vh-news-wrap {
@@ -1222,6 +1226,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn ease-in .3s;
 }
 
 .vh-web-design-wrap {
@@ -1317,6 +1322,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn ease-in .3s;
 }
 
 .vh-history {
@@ -1645,7 +1651,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 225px;
+    min-width: 200px;
 }
 
 .partner-logo-img {}
@@ -1833,6 +1839,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn ease-in .3s;
 }
 
 .vh-digital-marketing-left-img {
@@ -1958,6 +1965,7 @@ body {
 
 .vh-solution-item-btn {
     position: relative;
+    display: block;
     background-color: transparent;
     color: var(--primary-color);
     font-size: 1.6rem;
@@ -2076,6 +2084,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn ease-in .3s;
 }
 
 .vh-social-media-right-img {
@@ -2167,6 +2176,7 @@ body {
 }
 
 .vh-social-media-service-item-btn {
+    display: block;
     background-color: var(--white-color);
     position: relative;
     color: var(--primary-color);
@@ -2276,10 +2286,14 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 4rem;
+}
+
+.vh-new-relate-item a {
     color: #666;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none;
 }
 
 .vh-new-relate-item-active {
@@ -2299,7 +2313,11 @@ body {
 
 .vh-new-recently-item {
     padding: 10px 0;
+}
+
+.vh-new-recently-item a {
     display: flex;
+    text-decoration: none;
 }
 
 .vh-new-recently-item-img {
@@ -2520,8 +2538,12 @@ body {
 .vh-new-right-tags-icon {
     padding: 12px 0;
     font-size: 24px;
-    color: #888;
     margin-left: -12px;
+}
+
+.vh-new-right-tags-icon a {
+    color: #888;
+    text-decoration: none;
 }
 
 .vh-new-right-tags-icon i {
@@ -2564,6 +2586,10 @@ body {
 }
 
 .vh-new-right-comment-owner {}
+
+.vh-new-right-comment-owner b {
+    color: var(--black-color);
+}
 
 .vh-new-right-comment-msg {}
 
@@ -2635,4 +2661,5 @@ body {
     line-height: 2.4rem;
     background-color: var(--primary-color);
     color: var(--white-color);
+    cursor: pointer;
 }
