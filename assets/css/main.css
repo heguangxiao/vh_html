@@ -18,19 +18,10 @@ body {
     position: relative;
 }
 
-.vh-home-banner {
-    background: url('../../assets/img/banner_main.png');
-    background-repeat: no-repeat;
-    background-position: 80% 80%;
-    animation: fadeIn ease-in .3s;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 .header-wrap {
     display: flex;
     height: 120px;
-    padding: 18px 0;
+    padding: 18px 1px;
 }
 
 .header-logo {}
@@ -119,8 +110,12 @@ body {
     justify-content: center;
 }
 
+.header-search label {
+    margin-right: 24px;
+}
+
 .search-img {
-    padding-right: 30px;
+    width: 21px;
     cursor: pointer;
 }
 
@@ -129,6 +124,15 @@ body {
     font-size: 1.4rem;
     font-weight: 400;
     outline: none;
+    width: 65px;
+}
+
+
+.vh-home-banner {
+    background: url('../../assets/img/banner_main.png') bottom right / cover no-repeat;
+    width: 1440px;
+    animation: fadeIn ease-in .3s;
+    margin: 0 auto;
 }
 
 .home-banner {
@@ -624,6 +628,7 @@ body {
     justify-content: space-between;
     margin-left: -16px;
     margin-right: -16px;
+    transition: all 0.9s;
 }
 
 .company-members-item {
@@ -703,7 +708,7 @@ body {
 
 .vh-footer-mid-item {
     width: 49%;
-    padding: 10px 112px 0;
+    padding: 10px 68px 0;
 }
 
 .vh-footer-mid-item-left {

@@ -1,5 +1,22 @@
-@media only screen and (min-width: 64em) {}
+@media only screen and (min-width: 64em) and (max-width: 119.9375em) {}
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
 
 @media only screen and (max-width: 46.1875em) {}
+
+/* @media only screen and (min-width: 102.5em) { */
+@media only screen and (min-width: 120em) {
+    .grid.wide {
+        max-width: 1700px;
+    }
+
+    .vh-home-banner {
+        background: url('../../assets/img/index_banner_top_1920.png');
+        background-repeat: no-repeat;
+        background-position: -66% 112%;
+        width: 1700px;
+    }
+
+    .home-banner {
+    }
+}
