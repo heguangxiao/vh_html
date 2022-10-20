@@ -6,7 +6,9 @@
 
 /* @media only screen and (min-width: 102.5em) { */
 @media only screen and (min-width: 120em) {
-    .grid.wide {
+
+    .grid.wide,
+    .vh-home-banner {
         max-width: 1700px;
     }
 
@@ -14,9 +16,11 @@
         background: url('../../assets/img/index_banner_top_1920.png');
         background-repeat: no-repeat;
         background-position: -66% 112%;
-        width: 1700px;
     }
 
-    .home-banner {
+    .who-are-we {
+        /* background: url('../../assets/img/who_are_we_.png'); */
+        max-width: 1700px;
+        height: 680px;
     }
 }

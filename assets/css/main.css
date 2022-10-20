@@ -130,7 +130,7 @@ body {
 
 .vh-home-banner {
     background: url('../../assets/img/banner_main.png') bottom right / cover no-repeat;
-    width: 1440px;
+    max-width: 1440px;
     animation: fadeIn ease-in .3s;
     margin: 0 auto;
 }
