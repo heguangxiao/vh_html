@@ -2,38 +2,31 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 var ourServices = $$(".our-service-item");
-var ourServiceIndex = 0;
-
+var ourServiceOrder = 1;
 ourServices.forEach((ourService, index) => {
-    if ($(".our-service-item.our-service-item-active") == ourService) {
-        ourServiceIndex = index;
+    if (ourService.style.order == '') {
+        ourService.style.order = ourServiceOrder++;
     }
 });
 
-function removeOurServiceActive() {
-    $(".our-service-item.our-service-item-active").classList.remove('our-service-item-active');
-}
-
-function addOurServiceActive() {
-    ourServices[ourServiceIndex].classList.add('our-service-item-active');
-}
-
 function preOurService() {
-    removeOurServiceActive();
-    ourServiceIndex = ourServiceIndex - 1;
-    if (ourServiceIndex < 0) {
-        ourServiceIndex = ourServices.length - 1;
-    }
-    addOurServiceActive();
+    ourServices.forEach((ourService, index) => {
+        var order = parseInt(ourService.style.order) - 1;
+        if (order == 0) {
+            order = ourServices.length;
+        }
+        ourService.style.order = order;
+    });
 }
 
 function nextOurService() {
-    removeOurServiceActive();
-    ourServiceIndex = ourServiceIndex + 1;
-    if (ourServiceIndex >= ourServices.length) {
-        ourServiceIndex = 0;
-    }
-    addOurServiceActive();
+    ourServices.forEach((ourService, index) => {
+        var order = parseInt(ourService.style.order) + 1;
+        if (order > ourServices.length) {
+            order = 1;
+        }
+        ourService.style.order = order;
+    });
 }
 
 var companyMembersList = $$(".company-members-item");

@@ -9,18 +9,310 @@
 
     .grid.wide,
     .vh-home-banner {
-        max-width: 1700px;
+        max-width: 1440px;
     }
 
     .vh-home-banner {
         background: url('../../assets/img/index_banner_top_1920.png');
         background-repeat: no-repeat;
-        background-position: -66% 112%;
+        background-position: 40% 112%;
+        max-width: 1440px;
     }
 
     .who-are-we {
-        /* background: url('../../assets/img/who_are_we_.png'); */
-        max-width: 1700px;
         height: 680px;
+        background-size: 107%
     }
+
+    .who-are-we-content {
+        width: 42%;
+    }
+
+    .who-are-we-desc {
+        width: 40%;
+    }
+
+    .our-service-wrap {
+        background: url('../../assets/img/our_service_1920.png');
+        background-repeat: no-repeat;
+        background-position: 100% 36%;
+        max-width: 1920px;
+        height: 720px;
+        background-size: 82%;
+    }
+
+    .our-service-slider {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+
+    .our-service-desc {
+        /* margin-bottom: 36px; */
+    }
+
+    .our-service-item {
+        /* width: 328px; */
+        height: 350px;
+    }
+
+    .our-service-item-active,
+    .our-service-item:hover {
+        height: 370px;
+    }
+
+    .our-service-card {
+        height: 260px;
+    }
+
+    .our-service-name {
+        padding: 20px 12px;
+    }
+
+    .home-customers-wrap {
+        background: url('../../assets/img/home_customers_1920.png');
+        background-repeat: no-repeat;
+        background-position: 80% 80%;
+        background-size: 110%;
+    }
+
+    .home-customer-list {
+        left: 46%;
+    }
+
+    .home-commit {
+        background: var(--white-color);
+    }
+
+    .home-commit-wrap {
+        background: url('../../assets/img/home_commit_1920.png');
+        background-repeat: no-repeat;
+        background-position: 140% 100%;
+        background-size: 116%;
+        z-index: 2;
+    }
+
+    .home-commit-pan-left {
+        background: #f7f7f9;
+        display: block;
+        z-index: 1;
+    }
+
+    .company-members-wrap {
+        max-width: 1920px;
+        height: 744px;
+    }
+
+    .partner-logos {
+        background-color: var(--white-color);
+    }
+
+    .company-members-pagi {
+        margin-top: 50px;
+    }
+
+    .partner-logos-wrap {
+        max-width: 1800px;
+    }
+
+    .partner-logo-button {
+        background: #F9F9F9;
+    }
+
+    .partner-logo-img {}
+
+    .vh-footer-top-wrap {
+        max-width: 1920px;
+        background-position: 50% 100%;
+        background-size: 80%;
+    }
+
+    .partner-logo-pre {
+        margin-right: 20px;
+    }
+
+    .partner-logo-next {
+        margin-left: 20px;
+    }
+
+    .footer-top-button {
+        top: 184px;
+        left: 50%;
+        transform: translateX(-100px);
+    }
+
+    .vh-footer-mid {
+        background: url('../../assets/img/Footer_1920.png');
+        background-repeat: no-repeat;
+        max-width: 1920px;
+    }
+
+    .vh-footer-mid-wrap {
+        max-width: 1440px;
+    }
+
+    .vh-footer-mid-item {
+        padding: 10px 0;
+    }
+
+    .vh-footer-mid-item-left {}
+
+    .vh-footer-mid-item-left-content {
+        width: 67%;
+        padding-right: 18px;
+    }
+
+    .vh-footer-mid-item-right {
+        padding-left: 266px;
+    }
+
+    .home-banner img {
+        display: block;
+    }
+
+    .home-banner-top-right {
+        top: 6px;
+        right: 0;
+    }
+
+    .home-banner-bottom-right {
+        bottom: 20px;
+        right: 0;
+    }
+
+    .vh-digital-marketing-banner-wrap {}
+
+    .vh-digital-marketing-introduce {
+        background-size: 100%;
+        min-height: 666px;
+        margin: 50px auto 0;
+    }
+
+    .vh-digital-marketing-item {
+        padding: 20px 120px 70px 0px
+    }
+
+    .vh-solution-image {
+        height: 290px;
+        padding: 40px 48px 8px;
+    }
+
+    .vh-solution-item-title {
+        margin-top: 24px;
+        line-height: 4.4rem;
+    }
+
+    .vh-solution-item-sub {
+        line-height: 3.8rem;
+        margin-bottom: 8px;
+    }
+
+
+    .vh-solution-item-btn {
+        padding: 22px 48px;
+    }
+
+    .home-banner-title,
+    .home-banner-content,
+    .home-banner-description,
+    .home-banner-button {
+        left: 100px;
+    }
+
+    .vh-web-design-banner-wrap {
+        max-width: 1440px;
+        background-position: 128%;
+        background-size: 90%;
+    }
+
+    .vh-web-design-wrap {
+        background: url('../../assets/img/web_design_wrap_1920.png') no-repeat;
+        min-height: 600px;
+        background-position: 45% 0%;
+        margin: 50px 0;
+        background-size: 85%;
+    }
+
+    .vh-web-design-item-title {
+        margin-top: 50px;
+    }
+
+    .vh-social-media-banner-wrap {
+        background: url('../../assets/img/banner_social_media_top_1920.png') no-repeat;
+        max-width: 1920px;
+        background-position: 85% 0%;
+        background-size: 105%;
+    }
+
+    .vh-social-media-right-img {
+        right: 245px;
+    }
+
+    .vh-social-media-left-img-1 {
+        display: block;
+        top: 18px;
+        left: 268px;
+        z-index: 1;
+    }
+
+    .vh-social-media-left-img-2 {
+        display: block;
+        bottom: 0;
+        left: 244px;
+    }
+
+    .vh-social-media-left-img-3 {
+        display: block;
+        bottom: 84px;
+        left: 532px;
+    }
+
+    .vh-social-media-introduce-wrap {
+        max-width: 1920px;
+        background-position: 42% 0%;
+        background-size: 80%;
+        height: 672px;
+    }
+
+    .vh-social-media-item {
+        padding-right: 114px;
+    }
+
+    .vh-social-media-service-item-img {
+        height: 280px;
+    }
+
+    .vh-about-us-banner-wrap {
+        background: url('../../assets/img/banner_about_us_top_1920.png') no-repeat;
+        max-width: 1920px;
+        background-position: 0% 0%;
+        background-size: 100%;
+    }
+
+    .vh-history-wrap {
+        max-width: 1920px;
+        background-position: 33% 0%;
+        background-size: 76%;
+        height: 700px;
+    }
+
+    .vh-choose-me-title {
+        padding-right: 55px;
+    }
+
+    .vh-choose-me-content-body {
+        padding-right: 86px;
+    }
+
+    .vh-core-values-item {
+        padding: 28px 48px;
+    }
+
+    .vh-core-values-item-title {
+        margin-top: 42px;
+    }
+
+    .vh-contact-banner-left-img {
+        left: 116px;
+    }
+
 }

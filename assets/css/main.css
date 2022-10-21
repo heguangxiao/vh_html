@@ -6,6 +6,7 @@
 body {
     background-color: #FFF;
     font-family: myFirstFont;
+    /* text-transform: capitalize; */
 }
 
 .vh-web {
@@ -138,6 +139,11 @@ body {
 .home-banner {
     position: relative;
     height: 630px;
+}
+
+.home-banner img {
+    display: none;
+    position: absolute;
 }
 
 .home-banner-title {
@@ -332,7 +338,9 @@ body {
     align-items: center;
 }
 
-.our-service-img {}
+.our-service-img {
+    width: 80%;
+}
 
 .our-service-img:last-child {
     width: 280px;
@@ -353,11 +361,13 @@ body {
     color: #adadad;
 }
 
+.our-service-item:hover .our-service-eye,
 .our-service-item-active .our-service-eye {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
 
+.our-service-item:hover .our-service-name,
 .our-service-item-active .our-service-name {
     color: var(--primary-color);
 }
@@ -374,7 +384,8 @@ body {
     color: var(--black-color);
 }
 
-.our-service-item-active {
+.our-service-item-active,
+.our-service-item:hover {
     height: 340px;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.06);
 }
@@ -535,6 +546,16 @@ body {
 
 .home-commit {
     background: #F9F9F9;
+    position: relative;
+}
+
+.home-commit-pan-left {
+    display: none;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .home-commit-wrap {
@@ -633,8 +654,7 @@ body {
 
 .company-members-item {
     flex: 1;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin: 0 15px;
     animation: fadeIn ease-in .3s;
 }
 
@@ -643,7 +663,7 @@ body {
 }
 
 .company-members-job {
-    margin-top: 16px;
+    margin-top: 0px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -658,6 +678,7 @@ body {
     line-height: 2.4rem;
     color: #222;
     text-align: center;
+    padding-bottom: 16px;
 }
 
 .vh-footer {}
@@ -702,13 +723,19 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 80px;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
+    background-size: 105%;
+}
+
+.vh-footer-mid-wrap {
+    display: flex;
+    justify-content: center;
 }
 
 .vh-footer-mid-item {
-    width: 49%;
-    padding: 10px 68px 0;
+    width: 50%;
+    padding: 10px 10px 0 120px;
 }
 
 .vh-footer-mid-item-left {
@@ -726,6 +753,7 @@ body {
     font-size: 1.6rem;
     line-height: 3.4rem;
     color: #444;
+    padding-right: 120px;
 }
 
 .vh-footer-mid-item-left-ext {
@@ -857,6 +885,18 @@ body {
     position: absolute;
     bottom: -353px;
     left: 30px;
+}
+
+.vh-contact-banner-left-img-2 {
+    position: absolute;
+    top: 46px;
+    left: 436px;
+}
+
+.vh-contact-banner-right-img-2 {
+    position: absolute;
+    top: 49px;
+    right: -55px;
 }
 
 .vh-contact-banner-mid {
@@ -1035,6 +1075,10 @@ body {
 .vh-news-content {}
 
 .vh-news-banner {
+    background-color: #c9efff;
+}
+
+.vh-news-banner-wrap {
     background: url('../../assets/img/banner_news_top.png') top center / cover no-repeat;
     height: 350px;
     display: flex;
@@ -1042,6 +1086,8 @@ body {
     justify-content: center;
     align-items: center;
     animation: fadeIn ease-in .3s;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .vh-news-wrap {
@@ -1715,7 +1761,7 @@ body {
 
 .partner-logo-item {
     background-color: var(--white-color);
-    margin: 0 10px;
+    margin: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1845,6 +1891,7 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
+    height: 72px;
     color: #444;
 }
 
@@ -1980,6 +2027,10 @@ body {
     color: #444;
 }
 
+.vh-digital-marketing-info b {
+    color: var(--black-color);
+}
+
 .vh-digital-marketing-more {}
 
 .vh-digital-marketing-btn {}
@@ -2013,6 +2064,7 @@ body {
     border: 1px solid #D9D9D9;
     padding-bottom: 16px;
     margin-bottom: 16px;
+    border-radius: 5px;
 }
 
 .vh-solution-image {
@@ -2029,8 +2081,9 @@ body {
 .vh-solution-item-title {
     font-weight: 700;
     font-size: 2.4rem;
-    line-height: 3.2rem;
+    line-height: 3.6rem;
     color: #222;
+    margin-top: 12px;
 }
 
 .vh-solution-item-sub {
@@ -2042,11 +2095,15 @@ body {
 }
 
 .vh-solution-item-content {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #444;
     padding: 6px 50px 16px;
+}
+
+.vh-solution-item-content b {
+    color: var(--black-color);
 }
 
 .vh-solution-item-btn {
@@ -2180,6 +2237,13 @@ body {
     position: relative;
 }
 
+.vh-social-media-left-img-1,
+.vh-social-media-left-img-2,
+.vh-social-media-left-img-3 {
+    display: none;
+    position: absolute;
+}
+
 .vh-social-media-right-img {
     position: absolute;
     top: 156px;
@@ -2242,6 +2306,7 @@ body {
 .vh-social-media-service-item {
     border: 1px solid #D9D9D9;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .vh-social-media-service-item-img {
