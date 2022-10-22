@@ -326,6 +326,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .our-service-card {
@@ -372,11 +373,18 @@ body {
     color: var(--primary-color);
 }
 
+.company-members-item-wrap {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
 .our-service-item {
     width: 280px;
     height: 320px;
     background-color: var(--white-color);
-    transition: height .2s;
+    /* transition: height .2s; */
+    transition: 1s;
 }
 
 .our-service-item a {
@@ -649,13 +657,13 @@ body {
     justify-content: space-between;
     margin-left: -16px;
     margin-right: -16px;
-    transition: all 0.9s;
+    transition: 1s;
 }
 
 .company-members-item {
     flex: 1;
     margin: 0 15px;
-    animation: fadeIn ease-in .3s;
+    transition: .5s;
 }
 
 .company-members-img {

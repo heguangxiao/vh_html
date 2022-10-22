@@ -11,46 +11,64 @@ ourServices.forEach((ourService, index) => {
 
 function preOurService() {
     ourServices.forEach((ourService, index) => {
-        var order = parseInt(ourService.style.order) - 1;
-        if (order == 0) {
-            order = ourServices.length;
-        }
-        ourService.style.order = order;
-    });
-}
-
-function nextOurService() {
-    ourServices.forEach((ourService, index) => {
+        ourService.style.opacity = '0'
         var order = parseInt(ourService.style.order) + 1;
         if (order > ourServices.length) {
             order = 1;
         }
         ourService.style.order = order;
+        setTimeout(() => {
+            ourService.style.opacity = '1'
+        }, 400)
+    });
+}
+
+function nextOurService() {
+    ourServices.forEach((ourService, index) => {
+        ourService.style.opacity = '0'
+        var order = parseInt(ourService.style.order) - 1;
+        if (order == 0) {
+            order = ourServices.length;
+        }
+        ourService.style.order = order;
+        setTimeout(() => {
+            ourService.style.opacity = '1'
+        }, 400)
     });
 }
 
 var companyMembersList = $$(".company-members-item");
 var pagis = $$(".vh-pagi-pagi-item");
+var companyMemberOrder = 1;
+for (var i = 1; i <= companyMembersList.length; i++) {
+    if (companyMembersList[i - 1].parentElement.style.order == '') {
+        companyMembersList[i - 1].parentElement.style.order = companyMemberOrder++;
+    }
+}
 
 function companyMembersListChangeIndex() {
     var i = 1;
     companyMembersList.forEach((companyMembersItem, index) => {
+        companyMembersItem.style.animation = 'hideRight .3s ease-in-out forwards';
         const pagi = pagis[index];
 
-        if (companyMembersItem.style.order == '') {
-            companyMembersItem.style.order = i++;
+        if (companyMembersItem.parentElement.style.order == '') {
+            companyMembersItem.parentElement.style.order = i++;
         } else {
-            i = parseInt(companyMembersItem.style.order) - 1;
+            i = parseInt(companyMembersItem.parentElement.style.order) - 1;
             if (i < 1) {
                 i = companyMembersList.length;
             }
-            companyMembersItem.style.order = i;
+            companyMembersItem.parentElement.style.order = i;
         }
 
         if (i == 1) {
             $(".vh-pagi-pagi-item.vh-pagi-pagi-item-active").classList.remove("vh-pagi-pagi-item-active");
             pagi.classList.add("vh-pagi-pagi-item-active");
         }
+        setTimeout(() => {
+            companyMembersItem.style.animation = 'showLeft .3s ease-in-out forwards';
+        }, 200)
     });
 }
 
@@ -60,28 +78,34 @@ function stopCompanyMembersListInterval() {
     clearInterval(companyMembersListInterval);
 }
 
+function showcompanyMembersList(i, index) {
+    if (i - 1 < parseInt(index)) {
+        companyMembersList[i - 1].parentElement.style.order = companyMembersList.length - parseInt(index) + i;
+    } else if (i - 1 == parseInt(index)) {
+        companyMembersList[i - 1].parentElement.style.order = 1;
+    } else {
+        companyMembersList[i - 1].parentElement.style.order = i - parseInt(index);
+    }
+}
+
 function companyMembersListChangeOnclick(e) {
     stopCompanyMembersListInterval();
     $(".vh-pagi-pagi-item.vh-pagi-pagi-item-active").classList.remove("vh-pagi-pagi-item-active");
     pagis.forEach((pagi, index) => {
         if (pagi == e) {
-            var n = 1;
-            for (var i = 1; i <= companyMembersList.length; i++) {
-                if (companyMembersList[i - 1].style.order == '') {
-                    companyMembersList[i - 1].style.order = n++;
+            companyMembersList.forEach(companyMembers => {
+                companyMembers.style.opacity = '0';
+            });
+            setTimeout(() => {
+                for (var i = 1; i <= companyMembersList.length; i++) {
+                    showcompanyMembersList(i, index);
                 }
-            }
-
-            for (var i = 1; i <= companyMembersList.length; i++) {
-                if (i - 1 < parseInt(index)) {
-                    companyMembersList[i - 1].style.order = companyMembersList.length - parseInt(index) + i;
-                } else if (i - 1 == parseInt(index)) {
-                    companyMembersList[i - 1].style.order = 1;
-                } else {
-                    companyMembersList[i - 1].style.order = i - parseInt(index);
-                }
-            }
-
+            }, 400);
+            setTimeout(() => {
+                companyMembersList.forEach(companyMembers => {
+                    companyMembers.style.opacity = '1';
+                });
+            }, 500);
             pagis[index].classList.add("vh-pagi-pagi-item-active");
         }
     });

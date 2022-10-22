@@ -49,6 +49,54 @@ html {
     }
 }
 
+@keyframes showLeft {
+    0% {
+        transform: translateX(50%);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes showRight {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hideLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0.3;
+    }
+}
+
+@keyframes hideRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0.3;
+    }
+}
+
 .btn {
     padding: 16px 48px;
     position: absolute;

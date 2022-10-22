@@ -1,11 +1,11 @@
-@media only screen and (min-width: 64em) and (max-width: 119.9375em) {}
+@media only screen and (min-width: 64em) {}
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
 
 @media only screen and (max-width: 46.1875em) {}
 
 /* @media only screen and (min-width: 102.5em) { */
-@media only screen and (min-width: 120em) {
+@media only screen and (min-width: 90em) {
 
     .grid.wide,
     .vh-home-banner {
